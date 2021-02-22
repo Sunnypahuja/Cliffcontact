@@ -7,15 +7,20 @@ $(document).ready(function () {
 
       if ($(this).hasClass('highlight')) {
         //check if selected cell has class
-        $('#displaySelected').css('visibility', 'visible'); //make display box visible
+        // $('#displaySelected').css('visibility', 'visible'); //make display box visible
+        
         $('#displaySelected').css('margin-top', '2em'); //add spaces above display box
         $('#result').append('<p>' + content + ' at ' + head + '</p>'); //add child element with content of cell
+        $('#myModal').modal('show');
       } else {
         //if selected cell don't have class
+       
         $('#result p:contains(' + content + ')').remove(); //remove child element
+         $('#myModal').modal('show');
         if ($('#result').has('p').length == false) {
           //check if there are any child elements within parent
-          $('#displaySelected').css('visibility', 'hidden');
+          // $('#displaySelected').css('visibility', 'hidden');
+          
           $('#displaySelected').css('margin-top', '0');
         }
       }

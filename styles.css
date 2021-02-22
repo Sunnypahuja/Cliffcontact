@@ -210,7 +210,7 @@ th:first-child {
   width: 125px;
   height: 50px;
   background: #55acee;
-  color: #fff;
+  
 }
 td:first-child {
   font-weight: bold;
@@ -236,17 +236,17 @@ span:first-child {
 label::first-letter {
   text-transform: uppercase;
 }
-form .button {
+/*form .button {
   padding: 0 450px 15px;
-}
-input[type="submit"] {
+}*/
+/*input[type="submit"] {
   display: block;
   margin: 20px 0 10px 0;
   width: 120px;
-  /*background-color: #4977d1;*/
+  /*background-color: #4977d1;
   color: #fff;
   height: 30px;
-}
+}*/
 .contactinfo {
   margin-left: 80px;
 
@@ -255,15 +255,15 @@ input[type="submit"] {
 .randomcode {
   
   display: inline-block;
-  margin-left:200px;
+  margin-left:0px;
   margin-right: 100px;
   padding-top: 20px;
 }
 .randomcode input {
   margin-right: 20px;
-  
+  margin-bottom: 20px;
   width: 100px; 
-  margin-left: 150px;
+  margin-left: 0px;
   height: 25px;
    
 }
@@ -274,17 +274,19 @@ input[type="submit"] {
   padding: 10px 10px 10px 10px;
   
 }
-.highlight {
+ .table .highlight {
     background: rgb(80, 202, 117);
-    color: #fff;
-}
-#activities main  #displaySelected {
-  visibility: hidden;
+   
+    
+} 
+
+/* #activities main  #displaySelected {
+  
   margin:0 auto;
-  width:600px;
-  border: 2px solid #9ed034;
+ 
+  
   padding: 0.75em;
-}
+} */
 #activities main #displaySelected #result, #activities main #displaySelected #sendinfo {
   display:inline-block;
   margin:0;
@@ -299,7 +301,7 @@ input[type="submit"] {
   font-size:1.15em;
 }
 #activities main #displaySelected #sendinfo input[type="email"] {
-  width: 200px;
+  width: 100px;
 }
 .rowform {
   padding: 40px;
@@ -473,6 +475,11 @@ footer #nondisclaimer .social .fa-instagram {
   margin-right: 10px;
 }
 .inquire {
-  Margin-left:550px;
-  margin-top: 30px;
+  margin-top: 20px;
+  margin-left:20px;
+  padding: 10px 20px 10px 20px;
+  
+
 }
+
+ 

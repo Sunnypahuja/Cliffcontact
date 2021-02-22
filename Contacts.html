@@ -1,190 +1,181 @@
 <!DOCTYPE html>
 <html lang="en">
-   <head>
-      <title>My First Web Page</title>
-      <!--UTF-8 character set, covers all the characters and symbols in the world-->
-      <meta charset="utf-8">
-      <meta name="viewport" content="width=device-width, initial-scale = 1, shrink-to-fit = no">
-      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-      <link
+  <head>
+    <title>My First Web Page</title>
+    <!--UTF-8 character set, covers all the characters and symbols in the world-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale = 1, shrink-to-fit = no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
       crossorigin="anonymous"
-    />
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js"
-      integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js"
-      integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG"
-      crossorigin="anonymous"
-    ></script>
+      />
     
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-   <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styles.css">
   </head>
-   <body id="contact" onLoad="disableButton(true)">
-      <div id="container-fluid">
-         <!--wrap everything on this container-->
-         <header>
-            <!--main header-->
-               <div class="main-header sticky-top">
-                 <nav class="main-menu navbar navbar-expand-sm navbar-light">
-                  <!-- <div
-              class="w-100 d-flex align-items-center "
-            >-->
-                  <div class="logo">
-                     <img src="images/logo.png" alt="Great Cliff Logo"><!--logo image-->
-                  </div>
-                  <button
-                class="navbar-toggler bg-white"
-                type="button"
-                data-toggle="collapse"
-                data-target="#navbarContent"
-                aria-controls="navbarContent"
-                aria-expanded="false"
-                aria-label="Toggle navigation"
+  <body id="contact" onLoad="disableButton(true)">
+    <div id="container-fluid">
+      <header>
+        <div class="main-header sticky-top">
+          <nav class="main-menu navbar navbar-expand-lg navbar-light">
+            <!-- <div
+              class="w-100 d-flex align-items-center justify-content-between"
+              >-->
+            <div class="logo">
+              <img src="images/logo.png" alt="Great Cliffs Logo" />
+            </div>
+            <button
+              class="navbar-toggler bg-white "
+              type="button"
+              data-toggle="collapse"
+              data-target="#navbarContent"
+              aria-controls="navbarContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
               >
-                <span class="navbar-toggler-icon"></span>
-              </button>
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class=" justify-content-end collapse navbar-collapse " id="navbarContent">
+              <ul class="navbar-nav">
+                <li class="nav-item" >
+                  <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="cliffs.html">Cliffs</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="activities.html">Activities</a>
+                </li>
+                <li class="nav-item active">
+                  <a class="nav-link" href="Contacts.html">Contact</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+        <section id="timeofday">
+          <span>Your current Local Time:</span>
+          <span id="clock"></span>
+          <span id="zone"></span>
+        </section>
+      </header>
+    </div>
+    <!--Contact content-->
+    <main>
+      <div class="container-fluid">
+        <div class="main-content">
+          <h1>Contacting Us</h1>
+          <p>You can drop by the visitors information center at the cliff site that you plan on visiting. They are open7 days a week from 8.00AM to 5.00PM. You can also contact us directly if you need additional information about the Cliffs, Hours of Operations, Facilities or questions about this site using one of the following:
+          </p>
+        </div>
+        <div class="contactinfo">
+          <div class="phone">
+            <span class="badge badge-secondary" >Phone:</span>
+            <span >(800)GCLIFFS</span>
+          </div>
+          <div class="email">
+            <span class="badge badge-secondary">Email:</span>
+            <span >info@greatcliffs.com</span>
+          </div>
+        </div>
+        <!-- <form action="/contact" method="post">  
+          <fieldset>
+            <legend>Contact Form</legend>
+            <div class="textbox">
+              <label>Name:</label> 
+              <input type="text" name="name" placeholder="John Doe">  
+              <label>Email:</label>  
+              <input type="email" name="email" placeholder="johndoe@gmail.com"> 
+              <label>Phone:</label>
+              <input type="text" name="phone" placeholder="xxx-xxx-xxxx">
+            </div>
+            <div class="contact-option">
+              <label class="radios">How should we contact you?</label>  
+              <input type="radio" name="contact" value="email" checked>Email 
+              <input type="radio" name="contact" value="phone">Phone
+            </div>
             
-                  <!-- Navigation start-->
-                  <div class="justify-content-end collapse navbar-collapse" id="nevbarContent">
-                     
-                        <ul class=" navbar-nav ">
-                           <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-                           <li class="nav-item"><a class="nav-link" href="cliffs.html">Cliffs</a></li>
-                           <li class="nav-item"><a class="nav-link" href="activities.html">Activities</a></li>
-                           <li class="active nav-item"><a class="nav-link" href="Contacts.html">Contact</li>
-                           </a>
-                        </ul>
-                     </div>
-                     </nav>
-                     </div>
-                  </div>
-               
-              </header>
-              </div>
-      <!--Contact content-->
-      <main>
-         <div class="container-fluid">
-         <div class="main-content">
-            <h1>Contacting Us</h1>
-            <p>You can drop by the visitors information center at the cliff site that you plan on visiting. They are open7 days a week from 8.00AM to 5.00PM. You can also contact us directly if you need additional information about the Cliffs, Hours of Operations, Facilities or questions about this site using one of the following:
-            </p>
-         </div>
-         <div class="contactinfo">
-            <div class="phone">
-               <span class="badge badge-secondary" >Phone:</span>
-               <span >(800)GCLIFFS</span>
+            <div class="selectmenu">
+              <label class="drop-down">Which Cliff are you inquiring?</label>
+              <select>
+                <option>West Cliff</option>
+                <option>North Cliff</option>
+                <option>East Cliff</option>
+                <option>South Cliff</option>
+              </select>
             </div>
-            <div class="email">
-               <span class="badge badge-secondary">Email:</span>
-               <span >info@greatcliffs.com</span>
+            <div class="commentbox">
+              <label>How did you hear about us:</label>
+              <textarea></textarea>
             </div>
-         </div>
-         <!-- <form action="/contact" method="post">  
-            <fieldset>
+            
+          <div class= "randomcode">
+              <input id="codeentered" type="text" name="randomcode" placeholder="Enter Character"/>
+              <p id="codes"></p>
+            </div>
+            
+            <div class="button">
+              <input id="submit" type="submit" value="Inquire" />
+            </div>
+           
+          </fieldset>
+          </form>  end form-->
+        <form>
+          <fieldset class="form-group">
+            <div class="rowform col-12">
               <legend>Contact Form</legend>
-              <div class="textbox">
-                <label>Name:</label> 
-                <input type="text" name="name" placeholder="John Doe">  
-                <label>Email:</label>  
-                <input type="email" name="email" placeholder="johndoe@gmail.com"> 
-                <label>Phone:</label>
-                <input type="text" name="phone" placeholder="xxx-xxx-xxxx">
+              <div class="form-group col-8">
+                <label  for="exampleInputName1">Name:</label>
+                <input type="text" class="form-control" id="exampleInputName1" placeholder="Enter Full Name">
               </div>
-              <div class="contact-option">
-                <label class="radios">How should we contact you?</label>  
-                <input type="radio" name="contact" value="email" checked>Email 
-                <input type="radio" name="contact" value="phone">Phone
+              <div class="form-group col-8">
+                <label  for="exampleInputEmail1">Email:</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
               </div>
-              
-              <div class="selectmenu">
-                <label class="drop-down">Which Cliff are you inquiring?</label>
-                <select>
-                  <option>West Cliff</option>
-                  <option>North Cliff</option>
-                  <option>East Cliff</option>
-                  <option>South Cliff</option>
+              <div class="form-group col-8">
+                <label for="exampleInputPhone1">Phone:</label>
+                <input type="text" class="form-control" id="exampleInputPhone1"  placeholder="xxx-xxx-xxxx">
+              </div>
+              <div class="form-group col-10">
+                <label >How should we contact you? </label>
+                <label class="checkbox-inline">
+                <input  class="email" type="checkbox" value="Email">Email
+                </label>
+                <label class="checkbox-inline">
+                <input class="phone"type="checkbox" value="Phone">Phone
+                </label>
+              </div>
+              <div class="form-group col-8">
+                <label  for="sel1">Which Cliff are you inquiring?</label>
+                <select class="control-label drop-down" id="sel1">
+                  <option selected>Choose...</option>
+                  <option  value="Westcliff">West Cliff</option>
+                  <option value="Northcliff">North Cliff</option>
+                  <option value="Eastcliff">East Cliff</option>
+                  <option value="Southcliff">South Cliff</option>
                 </select>
               </div>
-              <div class="commentbox">
-                <label>How did you hear about us:</label>
-                <textarea></textarea>
+              <div class="form-group col-8">
+                <label for="comment">Comment:</label>
+                <textarea class="form-control" rows="5" id="comment"></textarea>
               </div>
-              
-            <div class= "randomcode">
-                <input id="codeentered" type="text" name="randomcode" placeholder="Enter Character"/>
-                <p id="codes"></p>
+              <div class="form-group col-8 ">
+                <div class= "randomcode ">
+                  <input class="col-sm-8" id="codeentered" type="text" name="randomcode" placeholder="Enter Character"/>
+                  <p id="codes"></p>
+                <button class=" btn btn-secondary  inquire" type="submit" id="submit">Inquire</button>
+            </div>
+            </div>
               </div>
-              
-              <div class="button">
-                <input id="submit" type="submit" value="Inquire" />
-              </div>
-             
-            </fieldset>
-            </form>  end form-->
-         <form>
-            <fieldset class="form-group">
-               <div class="rowform">
-                  <legend>Contact Form</legend>
-                  <div class="form-group col-8">
-                     <label  for="exampleInputName1">Name:</label>
-                     <input type="text" class="form-control" id="exampleInputName1" placeholder="Enter Full Name">
-                  </div>
-                  <div class="form-group col-8">
-                     <label  for="exampleInputEmail1">Email:</label>
-                     <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-                  </div>
-                  <div class="form-group col-8">
-                     <label for="exampleInputPhone1">Phone:</label>
-                     <input type="text" class="form-control" id="exampleInputPhone1"  placeholder="xxx-xxx-xxxx">
-                  </div>
-                  <div class="form-group col-10">
-                     <label >How should we contact you? </label>
-                     <label class="checkbox-inline">
-                     <input  class="email" type="checkbox" value="Email">Email
-                     </label>
-                     <label class="checkbox-inline">
-                     <input class="phone"type="checkbox" value="Phone">Phone
-                     </label>
-                  </div>
-                  <div class="form-group col-8">
-                     <label  for="sel1">Which Cliff are you inquiring?</label>
-                     <select class="control-label drop-down" id="sel1">
-                        <option selected>Choose...</option>
-                        <option  value="Westcliff">West Cliff</option>
-                        <option value="Northcliff">North Cliff</option>
-                        <option value="Eastcliff">East Cliff</option>
-                        <option value="Southcliff">South Cliff</option>
-                     </select>
-                  </div>
-                  <div class="form-group col-8">
-                     <label for="comment">Comment:</label>
-                     <textarea class="form-control" rows="5" id="comment"></textarea>
-                  </div>
-                  <div class="form-group">
-                     <div class= "randomcode">
-                        <input id="codeentered" type="text" name="randomcode" placeholder="Enter Character"/>
-                        <p id="codes"></p>
-                     </div>
-                  </div>
-                  <button class="col-sm-2 btn btn-secondary my-2 inquire"type="submit" id="submit">Inquire</button>
-               </div>
-            </fieldset>
-         </form>
-      </main>
+          </fieldset>
+        </form>
       </div>
-      <section>
+
+    </main>
+    <section>
       <ul id="partners">
         <div class="container-fluid">
           <div class="row">
@@ -240,27 +231,43 @@
         </div>
       </ul>
     </section>
-      <!--Section end>-->
-      <footer>
-         <!--footer starts-->
-         <div id="nondisclaimer">
-            <div class="copy">&copy Copyright 2020 :: GreatCliffs.com</div>
-            <div class="social">
-               <a href="#" class="fa fa-facebook"></a>
-               <a href="#" class="fa fa-instagram"></a>
-               <a href="#" class="fa fa-twitter"></a>
-            </div>
-         </div>
-         <div id="disclaimer">
-            <p>This website is designed and created solely for educational purposes only at Westcliff University. All contents are not intended for any commercial gain or use.</p>
-         </div>
-      </footer>
-      <!--footer ends-->
+    <!--Section end>-->
+    <footer>
+      <!--footer starts-->
+      <div id="nondisclaimer">
+        <div class="copy">&copy Copyright 2020 :: GreatCliffs.com</div>
+        <div class="social">
+          <a href="#" class="fa fa-facebook"></a>
+          <a href="#" class="fa fa-instagram"></a>
+          <a href="#" class="fa fa-twitter"></a>
+        </div>
       </div>
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-      <!--<script src = "js/script_scripts.js"></script>-->
-      <script src = "js/randomcodes.js"></script>
-   </body>
+      <div id="disclaimer">
+        <p>This website is designed and created solely for educational purposes only at Westcliff University. All contents are not intended for any commercial gain or use.</p>
+      </div>
+    </footer>
+    <!--footer ends-->
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src = "js/digclock.js"> </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!--<script src = "js/script_scripts.js"></script>-->
+    <script src = "js/randomcodes.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+      crossorigin="anonymous"
+      ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js"
+      integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi"
+      crossorigin="anonymous"
+      ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js"
+      integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG"
+      crossorigin="anonymous"
+      ></script>
+  </body>
 </html>
